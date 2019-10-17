@@ -1,0 +1,15 @@
+{
+  "name": "bamboo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cmalaboeuf/bamboo-server.git",
+  "author": "christophe.malaboeuf@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "bundle-lambda": "cd src/ && zip -r ../provisionning/lambda.zip index.js ../package.json ../node_modules "
+  },
+  "devDependencies": {
+    "aws-serverless-express": "^3.3.6",
+    "express": "^4.17.1"
+  }
+}
