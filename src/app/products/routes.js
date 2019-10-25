@@ -11,4 +11,6 @@ routes.put("/products/:id", products.updateProduct)
 
 routes.delete("/products/:id", products.deleteProduct)
 
+routes.post("/products/:productId/contracts/:contractId", products.associateContract)
+
 module.exports = routes
